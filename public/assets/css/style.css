@@ -1,9 +1,10 @@
 /* style for the landing page and app */
 
-/* .container { 
-    margin-bottom:50px;
-    height: 80%; 
-} */
+ .container { 
+    margin-bottom:80px;
+    margin-top:-10px;
+    height:100%; 
+} 
 
 
 h2{

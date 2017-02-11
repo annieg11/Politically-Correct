@@ -28,7 +28,8 @@ $('.close').on('click', function(){
 $('#zipSubmit').on('click keypress', function() {
   $('#repTable').show();
   $('.carousel').hide();
-  
+  $('#zipSubmit').hide();
+
 
   
 
