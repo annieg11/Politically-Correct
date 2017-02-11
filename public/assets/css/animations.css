@@ -1,12 +1,12 @@
 /*Animations*/
 
 /*Background*/
-body { 
+/* /* body { 
   width: 100%; 
   height: 100%; 
   background-image: url('../images/flag1.jpg');
  /* background-repeat: no-repeat;*/
-  background-size: cover;
+  /* background-size: cover;
   background-position: 0px 0px;
   animation: animatedBackground 40s linear infinite;
 }
@@ -15,9 +15,9 @@ body {
   from { background-position: 0 0; }
   to { background-position: 100% 0; }
 }
+ */
 
-
-.fadeIn {
+/* .fadeIn {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn; 
   animation-duration: 1.5s; 
@@ -27,8 +27,8 @@ body {
   visibility: visible !important; 
 }
 
-/*NJ Sign*/
-@keyframes fadeIn {
+/* /*NJ Sign*/
+/* @keyframes fadeIn {
   0% {
     transform: scale(0);
     opacity: 0.0;   
@@ -44,9 +44,9 @@ body {
     transform: scale(1);
     opacity: 1; 
   }   
-}
-
-@-webkit-keyframes fadeIn {
+} */
+ 
+/* @-webkit-keyframes fadeIn {
   0% {
     -webkit-transform: scale(0);
     opacity: 0.0;   
@@ -62,10 +62,10 @@ body {
     -webkit-transform: scale(1);
     opacity: 1; 
   }   
-}
+} */
 
-/*New Jersey Info*/
-.stretchRight{
+/* /*New Jersey Info*/
+/* .stretchRight{
   animation-name: stretchRight;
   -webkit-animation-name: stretchRight; 
 
@@ -78,9 +78,9 @@ body {
   transform-origin: 0% 0%;
   -ms-transform-origin: 0% 0%;
   -webkit-transform-origin: 0% 0%;    
-}
-
-@keyframes stretchRight {
+} */
+ 
+/* @keyframes stretchRight {
   0% {
     transform: scaleX(0.3);
   }
@@ -126,10 +126,10 @@ body {
   100% {
     -webkit-transform: scaleX(1);
   }   
-}
+} */
 
-/*Search Bar*/
-.pullDown{
+/* /* /*Search Bar*/
+/* .pullDown{
   animation-name: pullDown;
   -webkit-animation-name: pullDown; 
 
@@ -142,9 +142,9 @@ body {
   transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   -webkit-transform-origin: 50% 0%;     
-}
+}  */
 
-@keyframes pullDown {
+/* @keyframes pullDown {
   0% {
     transform: scaleY(0.1);
   }
@@ -166,9 +166,9 @@ body {
   100% {
     transform: scaleY(1);
   }             
-}
+} */
 
-@-webkit-keyframes pullDown {
+/* @-webkit-keyframes pullDown {
   0% {
     -webkit-transform: scaleY(0.1);
   }
@@ -191,9 +191,9 @@ body {
     -webkit-transform: scaleY(1);
   }   
 }
-
+ */
 /*Image*/
-.pullUp{
+./* pullUp{
   animation-name: pullUp;
   -webkit-animation-name: pullUp; 
 
@@ -206,9 +206,9 @@ body {
   transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;     
-}
+} */
 
-@keyframes pullUp {
+/* @keyframes pullUp {
   0% {
     transform: scaleY(0.1);
   }
@@ -231,8 +231,8 @@ body {
     transform: scaleY(1);
   }             
 }
-
-@-webkit-keyframes pullUp {
+ */
+/* @-webkit-keyframes pullUp {
   0% {
     -webkit-transform: scaleY(0.1);
   }
@@ -254,4 +254,43 @@ body {
   100% {
     -webkit-transform: scaleY(1);
   }   
+}   */
+
+.carousel {
+    position:absolute;
+    top:0;    
 }
+.carousel { z-index: 5; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background: url(./assets/images/background.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(./assets/images/flag1.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(./assets/images/newjersey.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+
+
+

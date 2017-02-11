@@ -1,5 +1,10 @@
 //Initialize variables
+
+
+
+
 var zipCodeToSearch;
+
 
 function checkZipCode(zipCodeToSearch){
   if (zipCodeToSearch.length == 5) {
@@ -12,9 +17,20 @@ function checkZipCode(zipCodeToSearch){
   }
 }
 
+$('.close').on('click', function(){
+  $('.carousel').show();
+  $('#zipcode').val('');
+  window.location.reload();
+});
+
+
+
 $('#zipSubmit').on('click keypress', function() {
- 
   $('#repTable').show();
+  $('.carousel').hide();
+  
+
+  
 
   //obtain zip code
   zipCodeToSearch = parseInt($('#zipcode').val().trim());
