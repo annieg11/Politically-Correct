@@ -7,16 +7,16 @@ Easy access to information regarding all local and state representatives. App al
 ## Screenshots 
 
 #### Landing Page
-![Landing Page](public/assets/images/landingpage.png)
+![Landing Page](public/assets/images/LandingPage.png)
 
 #### Representative Info
 ![Representative](public/assets/images/rep.png)
 
 #### Sign Up
-![Sign Up](public/assets/images/signUp.png)
+![Sign Up](public/assets/images/Signup.png)
 
 #### Contact Modal
-![Contact Modal](public/assets/images/contact.png)
+![Contact Modal](public/assets/images/Contact.png)
 
 
 ## Technologies used
