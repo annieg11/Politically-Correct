@@ -60,10 +60,20 @@ $('#zipSubmit').on('click keypress', function() {
   }
 });
 
-
-
-
-
+// // to get news article
+// var url = "https://api.nytimes.com/svc/news/v3/content/all/all.json";
+// url += '?' + $.param({
+//   'api-key': "5c379e9645324b7c9dc438eb908e936c"
+//   'limit': 10
+// });
+// $.ajax({
+//   url: url,
+//   method: 'GET',
+// }).done(function(result) {
+//   console.log(result);
+// }).fail(function(err) {
+//   throw err;
+// });
 
 
 
