@@ -26,17 +26,19 @@ $('.close').on('click', function(){
 
 
 $('#zipSubmit').on('click keypress', function() {
-  $('#repTable').show();
-  $('.carousel').hide();
-  $('#zipSubmit').hide();
+ 
+  //obtain zip code
+  zipCodeToSearch = parseInt($('#zipcode').val().trim());
 
 
   
-
-  //obtain zip code
-  zipCodeToSearch = parseInt($('#zipcode').val().trim());
   //Verify the zip code is a 5 digit numeric value before proceeding
-  if (isNaN(zipCodeToSearch) == false && zipCodeToSearch > 0) {
+  if (isNaN(zipCodeToSearch) == false && zipCodeToSearch >2000) {
+
+      $('#repTable').show();
+      $('.carousel').hide();
+      $('#zipSubmit').hide();
+
     // Making an ajax request to get the response.
     $.ajax({
       url: '/' + zipCodeToSearch,
